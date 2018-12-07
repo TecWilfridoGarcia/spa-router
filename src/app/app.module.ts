@@ -9,6 +9,7 @@ import { ContentComponent } from './components/content/content.component';
 import { HomeComponent } from './components/home/home.component';
 import { ApiComponent } from './components/api/api.component';
 import { FormsComponent } from './components/forms/forms.component';
+import { SingComponent } from './components/sing/sing.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { FormsComponent } from './components/forms/forms.component';
     ContentComponent,
     HomeComponent,
     ApiComponent,
-    FormsComponent
+    FormsComponent,
+    SingComponent
 
 
   ],

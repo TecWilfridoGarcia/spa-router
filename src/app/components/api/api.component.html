@@ -1,10 +1,11 @@
 <div class="container mt-5 d-flex mr-4">
-<div class="card mt-4" style="width: 18rem;"  *ngFor="let single of singles">
+<div class="card mt-4 animated fadeIn fast" style="width: 18rem;"  *ngFor="let single of singles; let i= index">
   <img class="card-img-top"  [src]="single.img" [alt]="single.nombre">
   <div class="card-body">
     <h5 class="card-title">{{single.nombre}} {{single.apellido}}</h5>
     <p class="card-text">{{single.genero}}</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <button (click)="viewSing(i)">Ver mas...</button>
+    <!-- <a [routerLink]="['/sing',i]" class="btn btn-primary">Ver mas...</a> -->
   </div>
 </div>
 </div>
